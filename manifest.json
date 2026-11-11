@@ -1,0 +1,9 @@
+{
+	"name": "Eldritch Scholar",
+	"version": "0.0.1",
+	"minAppVersion": "1.0.0",
+	"author": "Melih Yavru",
+	"authorUrl": "",
+	"description": "A Renaissance-inspired Obsidian theme with incunabula side notes and scholarly aesthetics.",
+	"theme": true
+}

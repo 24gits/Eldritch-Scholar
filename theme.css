@@ -1,0 +1,255 @@
+/* ==========================================================================
+   THEME: Black Amethyst x Renaissance Scholar (Dark Souls 1 x Futuristic V3)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IM+Fell+English:ital@0;1&family=MonteCarlo&display=swap');
+
+body {
+    font-size: 12px;
+
+    /* --- Base Variables & Sharp Edges --- */
+    --radius-s: 0px;
+    --radius-m: 0px;
+    --radius-l: 0px;
+    --input-radius: 0px;
+    --tab-radius-active: 0px;
+    --checkbox-radius: 0px;
+    --toggle-radius: 0px;
+    --toggle-thumb-radius: 0px;
+    --slider-thumb-radius: 0px;
+
+    /* --- Renaissance Scholar Typography --- */
+    --font-family-editor: 'IM FELL English', 'Garamond', serif;
+    --font-family-preview: 'EB Garamond', 'Garamond', serif;
+    --font-family-code: 'IBM Plex Mono', 'Courier Prime', monospace;
+
+    /* --- Gothic & Dark Parchment Color Palette --- */
+    --background-primary: #120e16;
+    --background-primary-alt: #18131e;
+    --background-secondary: #0d0a10;
+    --background-secondary-alt: #08060a;
+
+    /* Text & Ink Colors */
+    --text-normal: #d8ceca;
+    --text-muted: #8a7b8c;
+    --text-faint: #564a59;
+    --text-accent: #c792ea;
+    --text-accent-hover: #e0b0ff;
+    --text-selection: #4a285b;
+
+    /* Headings */
+    --h1-color: #4a8a96;
+    --h2-color: #ba68c8;
+    --h3-color: #386b75;
+    --h4-color: #ab47bc;
+    --h5-color: #386b75;
+    --h6-color: #9c27b0;
+
+    --h1-size: 3em;
+    --h2-size: 1.8em;
+    --h3-size: 1.5em;
+    --h4-size: 1.3em;
+    --h5-size: 1.1em;
+    --h6-size: 1.0em;
+
+    --code-background: #1a1221;
+    --code-normal: #e1bee7;
+    --pre-background: #140d1a;
+}
+
+/* ==========================================================================
+   1. GLOBAL BACKGROUND (Black to Purple Vertical Gradient)
+   ========================================================================== */
+body,
+.markdown-preview-view,
+.cm-s-obsidian,
+.cm-content,
+.view-content,
+.workspace-leaf,
+.markdown-source-view {
+    background: linear-gradient(to bottom, #08060a 35%, #04010A 45%, #0A0218  80%, #1B0445 100%) !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+
+body::before, body::after, .view-content::before, .view-content::after {
+    display: none !important;
+    background: none !important;
+}
+
+/* ==========================================================================
+   2. GLOBAL TYPOGRAPHY ENFORCEMENT
+   ========================================================================== */
+.markdown-preview-view,
+.cm-s-obsidian,
+.cm-content,
+.cm-line,
+.workspace-tab-header-container,
+.workspace-tab-header,
+.nav-files-container,
+.nav-file-title,
+.workspace-leaf-content,
+.nav-folder-title,
+.search-input-container input[type="search"]{
+    font-family: 'IM FELL English', serif !important;
+}
+
+.inline-title {
+  border-bottom: 3px solid var(--interactive-accent) !important;
+  padding-bottom: 6px !important;
+  margin-bottom: 16px !important;
+}
+
+.cm-header-1,
+.markdown-rendered h1 {
+  border-bottom: 2px solid var(--interactive-accent) !important;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+
+.markdown-rendered h2,
+.cm-header-2 {
+  border-bottom: 1px solid var(--text-muted) !important;
+  padding-bottom: 3px !important;
+  margin-bottom: 10px !important;
+}
+
+.nav-header,
+.inline-title, .cm-header,  .cm-line.HyperMD-header.HyperMD-header-1, h1,
+.cm-line.HyperMD-header.HyperMD-header-2, h2,
+.cm-line.HyperMD-header.HyperMD-header-3, h3,   .cm-line.HyperMD-header.HyperMD-header-4, h4 ,
+.cm-line.HyperMD-header.HyperMD-header-5, h5, .cm-line.HyperMD-header.HyperMD-header-6, h6 {
+    display: inline-flex !important;
+    justify-content: center !important;
+    width: 100%;
+    font-family: "MonteCarlo", serif !important;
+}
+
+/* ==========================================================================
+   3. SIDEBAR & FILE EXPLORER
+   ========================================================================== */
+.workspace-split.mod-horizontal,
+.workspace-split.mod-vertical,
+.workspace-leaf,
+.workspace-leaf-content,
+.nav-files-container,
+.nav-folder,
+.nav-header,
+.workspace-sidedock-vault-profile {
+    background-color: var(--background-secondary) !important;
+    background-image: none !important;
+}
+
+.nav-folder-title,
+.nav-file-title,
+.nav-folder-children {
+    background-color: transparent !important;
+    color: var(--text-normal) !important;
+}
+
+.nav-file-title.is-active,
+.nav-folder-title.is-active,
+.nav-file-title:hover,
+.nav-folder-title:hover {
+    background-color: var(--text-selection) !important;
+    color: var(--text-accent) !important;
+}
+
+/* ==========================================================================
+   4. İNATÇI BEYAZ ÇİZGİLERİ KÖKTEN KAZIMA
+   ========================================================================== */
+*, *::before, *::after,
+.workspace-leaf, .workspace-tabs, .workspace-split, .workspace-tab-header-container,
+.workspace-tab-header, .view-header, .nav-header, .nav-files-container, .workspace-ribbon,
+.workspace-drawer-inner, .workspace-tab-header-inner, .titlebar, .titlebar-button-container,
+.status-bar, .workspace-sidedock-vault-profile {
+    border: none !important;
+    border-width: 0px !important;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+/* ==========================================================================
+   5. İNCE 3D METALİK GRADYAN BORDERLAR VE NEON IŞIKLANDIRMA
+   ========================================================================== */
+.workspace-leaf,
+.workspace-tabs,
+.workspace-split,
+.view-header,
+.status-bar,
+.workspace-ribbon {
+    border-bottom: 1px solid transparent !important;
+    border-right: 1px solid transparent !important;
+    border-image: linear-gradient(to right, #310047 0%, #470012 50%, #310047 100%) 1 !important;
+}
+
+.workspace-split.mod-vertical,
+.workspace-ribbon.mod-left {
+    border: 0px solid transparent !important;
+    border-image: linear-gradient(to bottom, #310047 0%, #470012 50%, #310047 100%) 1 !important;
+}
+
+.workspace-tab-header-container {
+    background-color: var(--background-secondary) !important;
+    border-bottom: 1px solid transparent !important;
+    border-image: linear-gradient(to right, #310047 0%, #470012 50%, #310047 100%) 1 !important;
+    box-shadow: inset 0 -2px 4px rgba(0,0,0,0.6) !important;
+}
+
+.workspace-tab-header.tappable.is-active {
+    background: var(--background-primary) !important;
+    color: var(--text-accent) !important;
+    border-top: 1px solid transparent !important;
+    border-image: linear-gradient(to right, #ba68c8 0%, #FF0040 50%, #ba68c8 100%) 1 !important;
+}
+
+/* ==========================================================================
+   6. SETTINGS MENU & UI BUTTONS
+   ========================================================================== */
+.modal.mod-settings,
+.vertical-tab-header,
+.vertical-tab-content-container,
+.vertical-tab-header-tab {
+    background-color: var(--background-secondary) !important;
+    color: var(--text-normal) !important;
+}
+
+.modal button, button, select,
+input[type="text"], input[type="search"],
+.setting-item-control button, .setting-item-control select, .setting-item-control input {
+    background-color: var(--code-background) !important;
+    color: var(--text-normal) !important;
+    border: 1px solid transparent !important;
+    border-image: linear-gradient(to right, #310047, #470012, #310040) 1 !important;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.8) !important;
+}
+
+.modal button:hover, button:hover, select:hover, .setting-item-control button:hover {
+    background-color: var(--text-selection) !important;
+    color: var(--text-accent) !important;
+    border-image: linear-gradient(to right, #ba68c8, #470012, #ba68c8) 1 !important;
+}
+
+.search-input-container input[type="search"] {
+    background: var(--background-primary) !important;
+    color: var(--text-normal) !important;
+}
+
+.vertical-tab-header-tab.is-active {
+    background-color: var(--background-primary) !important;
+    color: var(--text-accent) !important;
+    border-left: 2px solid #ba68c8 !important;
+}
+
+.checkbox-container.is-enabled,
+button.mod-cta {
+    background-color: #6a1b9a !important;
+    border: 1px solid #ba68c8 !important;
+}
+
+.modal-close-button, .clickable-icon {
+    color: var(--text-normal) !important;
+}
+.modal-close-button:hover, .clickable-icon:hover {
+    color: var(--text-accent) !important;
+}
