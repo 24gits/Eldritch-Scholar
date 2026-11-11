@@ -1,5 +1,6 @@
 ## A dark, gothic, and scholarly theme blending Dark Souls aesthetics, deep amethyst tones, and futuristic minimalism.
-[Pasted image 20261111201629.png]
+
+<img width="1024" height="341" alt="Pasted image 20261111201629" src="https://github.com/user-attachments/assets/b56c1e82-3f01-461e-b4c9-d48f824889ab" />
 
 ## ✨ Features
 
