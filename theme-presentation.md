@@ -5,7 +5,7 @@ date: "2024"
 cssclasses:
   - dropcaps
 ---
-welcome to **Renaissance Scholar**, a theme crafted for the contemplative mind and the discerning eye. This design draws inspiration from the elegance of incunabula,[^1] the balance of classical [marginalia](https://en.wikipedia.org/wiki/Marginalia), and the quiet dignity of vellum and ink. Whether you annotate ancient texts, compose original treatises, or collect fragments of thought, this [[environment]] aspires to be more than a digital notebook: it is a *scriptorium* for the modern humanist. Let your words find structure, your insights light, and your scholarship rest within these pages. 
+welcome to **Eldritch Scholar**, a theme crafted for the contemplative mind and the discerning eye. This design draws inspiration from the elegance of incunabula,[^1] the balance of classical [marginalia](https://en.wikipedia.org/wiki/Marginalia), and the quiet dignity of vellum and ink. Whether you annotate ancient texts, compose original treatises, or collect fragments of thought, this [[environment]] aspires to be more than a digital notebook: it is a *scriptorium* for the modern humanist. Let your words find structure, your insights light, and your scholarship rest within these pages. 
 # h1 - Lorem Ipsum
 ## h2 - Lorem Ipsum
 ### h3- Lorem Ipsum
