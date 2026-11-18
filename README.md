@@ -1,5 +1,9 @@
 ## A dark, gothic, and scholarly theme blending Dark Souls aesthetics, deep amethyst tones, and futuristic minimalism.
 
+<img width="1200" height="800" alt="eldritch_scholar_1" src="https://github.com/user-attachments/assets/2a624f16-8992-4f40-8a44-1da61a00e6f7" />
+
+# A blend of the 'Renaissance Scholar' and 'Black Amethyst' themes.
+
 <img width="1024" height="341" alt="Pasted image 20261111201629" src="https://github.com/user-attachments/assets/b56c1e82-3f01-461e-b4c9-d48f824889ab" />
 
 ## ✨ Features
