@@ -1,4 +1,5 @@
 /* ==========================================================================
+ELDRITCH SCHOLAR
    THEME: Black Amethyst x Renaissance Scholar (Dark Souls 1 x Futuristic V3)
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IM+Fell+English:ital@0;1&family=MonteCarlo&display=swap');
@@ -56,9 +57,6 @@ body {
     --pre-background: #140d1a;
 }
 
-/* ==========================================================================
-   1. GLOBAL BACKGROUND (Black to Purple Vertical Gradient)
-   ========================================================================== */
 body,
 .markdown-preview-view,
 .cm-s-obsidian,
@@ -76,9 +74,6 @@ body::before, body::after, .view-content::before, .view-content::after {
     background: none !important;
 }
 
-/* ==========================================================================
-   2. GLOBAL TYPOGRAPHY ENFORCEMENT
-   ========================================================================== */
 .markdown-preview-view,
 .cm-s-obsidian,
 .cm-content,
@@ -124,9 +119,6 @@ body::before, body::after, .view-content::before, .view-content::after {
     font-family: "MonteCarlo", serif !important;
 }
 
-/* ==========================================================================
-   3. SIDEBAR & FILE EXPLORER
-   ========================================================================== */
 .workspace-split.mod-horizontal,
 .workspace-split.mod-vertical,
 .workspace-leaf,
@@ -154,9 +146,6 @@ body::before, body::after, .view-content::before, .view-content::after {
     color: var(--text-accent) !important;
 }
 
-/* ==========================================================================
-   4. İNATÇI BEYAZ ÇİZGİLERİ KÖKTEN KAZIMA
-   ========================================================================== */
 *, *::before, *::after,
 .workspace-leaf, .workspace-tabs, .workspace-split, .workspace-tab-header-container,
 .workspace-tab-header, .view-header, .nav-header, .nav-files-container, .workspace-ribbon,
@@ -168,10 +157,6 @@ body::before, body::after, .view-content::before, .view-content::after {
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
 }
-
-/* ==========================================================================
-   5. İNCE 3D METALİK GRADYAN BORDERLAR VE NEON IŞIKLANDIRMA
-   ========================================================================== */
 .workspace-leaf,
 .workspace-tabs,
 .workspace-split,
@@ -203,9 +188,6 @@ body::before, body::after, .view-content::before, .view-content::after {
     border-image: linear-gradient(to right, #ba68c8 0%, #FF0040 50%, #ba68c8 100%) 1 !important;
 }
 
-/* ==========================================================================
-   6. SETTINGS MENU & UI BUTTONS
-   ========================================================================== */
 .modal.mod-settings,
 .vertical-tab-header,
 .vertical-tab-content-container,
@@ -254,11 +236,6 @@ button.mod-cta {
     color: var(--text-accent) !important;
 }
 
-/* ==========================================================================
-   KÜP GÖRÜNÜRLÜĞÜ İÇİN TAM KATMAN ŞEFFAFLIĞI (ÜSTTEKİ KURALLARI EZER)
-   ========================================================================== */
-
-/* 1. Gradyan sadece ana gövdede kalsın */
 html,
 body {
     background: linear-gradient(to bottom, #08060a 35%, #04010A 45%, #0A0218 80%, #1B0445 100%) !important;
@@ -267,7 +244,6 @@ body {
     overflow-x: hidden !important;
 }
 
-/* 2. Obsidian'ın tüm ana kapsayıcı ve editör katmanlarını şeffaf yap */
 .app-container,
 .horizontal-main-container,
 .workspace,
@@ -289,7 +265,6 @@ body {
     background-color: transparent !important;
 }
 
-/* 3. Yan panelleri (Dosya Gezgini vb.) yarı şeffaf bırak */
 .workspace-split.mod-left-split,
 .workspace-split.mod-right-split,
 .workspace-drawer,
@@ -299,7 +274,6 @@ body {
     background-color: rgba(13, 10, 16, 0.78) !important;
 }
 
-/* 4. 3D Yeşil Küpü En Üst Arka Plan Katmanına Yerleştir */
 body::before {
     content: '' !important;
     display: block !important;
@@ -321,4 +295,51 @@ body::before {
 .app-container {
     position: relative;
     z-index: 1;
+}
+
+.markdown-rendered table,
+.cm-table-widget table,
+.cm-embed-block table {
+    font-family: var(--font-default, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif) !important;
+    border-collapse: separate !important;
+    border-spacing: 5px !important;
+    background: transparent !important;
+    width: 100% !important;
+}
+
+.markdown-rendered th,
+.markdown-rendered td,
+.cm-table-widget th,
+.cm-table-widget td,
+.cm-embed-block th,
+.cm-embed-block td {
+    font-family: inherit !important;
+    background-color: #16161a !important;
+    color: var(--text-normal) !important;
+    border: 1px solid #2b2b33 !important;
+    border-radius: 6px !important;
+    padding: 8px 12px !important;
+}
+
+.markdown-rendered th,
+.cm-table-widget th,
+.cm-embed-block th {
+    background-color: #1f1f26 !important;
+    color: var(--text-accent) !important;
+    font-weight: 600 !important;
+    border-color: #3a3a45 !important;
+}
+
+.markdown-rendered td:hover,
+.cm-table-widget td:hover {
+    background-color: #1e1e24 !important;
+    border-color: #4a4a58 !important;
+}
+
+.markdown-rendered h3, .cm-header-3,
+.markdown-rendered h4, .cm-header-4,
+.markdown-rendered h5, .cm-header-5,
+.markdown-rendered h6, .cm-header-6 {
+    text-align: left !important;
+    justify-content: flex-start !important;
 }
